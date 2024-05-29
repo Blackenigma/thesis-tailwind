@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          body {
+            font-family: "Raleway", sans-serif;
+          }
+          a{
+            z-index: 1000;
+          }
+        </style>
+      </head>
+      <body
+        class="bg-cover bg-no-repeat bg-center h-screen"
+        style="background-image: url('bg.png')"
+      >
+      <a href="login.html" class="relative  left-5 top-5 text-[#c41e3a] text-[20px] bg-white p-1 border-2 border-[#c41e3a] rounded-[15px] ">Log out</a>
+      <div class="info w-full">
+        <h1 class="px-5 py-8 text-[30px] md:text-[40px] md:py-8 md:px-20 lg:mt-[195px] lg:text-[40px] lg:w-[600px] lg:float-left">
+          <span class="text-[#c41e3a] font-raleway font-extrabold ">Exam</span>
+          <span class="text-[#343434] font-raleway font-extrabold ">Maker</span>
+          <span class="text-[24px]">with</span>
+          <span class="text-[#c04000] font-raleway font-extrabold">Generative AI</span>
+        </h1>
+        <p class="relative -top-5 px-5 py-2 text-[16px] md:text-[18px] md:py-4 md:px-[180px] lg:px-[80px] lg:text-[22px] lg:w-[450px]">
+          Making it easy for you to create your
+          <span class="text-[#c41e3a]">questions</span>
+        </p>
+      </div>
+      <form class="upload p-5 md:p-8 lg:pl-[80px] lg:w-1/2 ">
+        <input class="relative -top-5 inp p-2 border-2 border-[#c41e3a] rounded-[15px] bg-white" type="file" name="fileInput" accept=".pdf, .docx" />
+      </form>
+      <div class="result-wrapper h-[370px] p-1 mt-8 mx-5 bg-[#c41e3a] md:h-[420px] md:mt-2 lg:absolute lg:top-[50px] lg:left-[550px] lg:h-[600px] lg:w-[870px]">
+        <div class="result h-[320px] bg-white md:h-[370px] lg:h-[550px]"></div>
+        <div class="btn-wrap flex justify-evenly mt-4 md:mt-2">
+          <button class="w-24 p-1 bg-gray-200 rounded">Generate</button>
+          <button class="w-24 p-1 bg-gray-200 rounded">Save</button>
+          <button class="w-24 p-1 bg-gray-200 rounded">File type</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
