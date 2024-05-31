@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          body {
+            font-family: "Raleway", sans-serif;
+          }
+          a{
+            z-index: 1000;
+          }
+        </style>
+      </head>
+      <body
+        class="bg-cover bg-no-repeat bg-center h-screen"
+        style="background-image: url('bg.png')"
+      >
+      <div class="absolute top-[10px] left-[80px] z-30">
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" type="button" class="flex items-center space-x-2"><img src="pfp.png" alt=""><span class="font-raleway font-semibold">Allan Victor L. Cecilia</span>
+          </button>
+  
+         <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 border border-[#c41e3a] my-3">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li class="border-b border-[#c41e3a]">
+            <a href="#" class="block px-14 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-raleway font-medium">Options</a>
+          </li>
+          <li>
+            <a href="login.html" class="block px-14 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-raleway font-medium">Log out</a>
+          </li>
+        </ul>
+       </div>
+       <script>
+        document.getElementById('dropdownDefaultButton').addEventListener('click', function () {
+          var dropdown = document.getElementById('dropdown');
+          dropdown.classList.toggle('hidden');
+        });
+      </script>
+      </div>
+
+  
+      <div class="info w-full">
+        <h1 class="px-5 py-8 text-[30px] md:text-[40px] md:py-8 md:px-20 lg:mt-[195px] lg:text-[40px] lg:w-[600px] lg:float-left">
+          <span class="text-[#c41e3a] font-raleway font-extrabold ">Exam</span>
+          <span class="text-[#343434] font-raleway font-extrabold ">Maker</span>
+          <span class="text-[24px]">with</span>
+          <span class="text-[#c04000] font-raleway font-extrabold">Generative AI</span>
+        </h1>
+        <p class="relative -top-5 px-5 py-2 text-[16px] md:text-[18px] md:py-4 md:px-[180px] lg:px-[80px] lg:text-[22px] lg:w-[450px]">
+          Making it easy for you to create your
+          <span class="text-[#c41e3a]">questions</span>
+        </p>
+      </div>
+      <form class="upload p-5 md:p-8 lg:pl-[80px] lg:w-1/2 relative -top-10">
+        <div class="relative inline-block">
+          <label class="inline-block w-[300px] px-4 py-2 border-2 border-[#c41e3a] rounded-[15px] bg-white text-gray-500 cursor-pointer" for="fileInput">
+            <span class="ml-16">Enter file here</span>
+            <img src="upl.png" alt="Choose File" class="ml-12 w-6 h-6 inline-block">
+          </label>
+          <input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="fileInput" type="file" name="fileInput" accept=".pdf, .docx">
+        </div>
+      </form>
+      <div class="result-wrapper h-[370px] p-1 mt-8 mx-5 bg-[#c41e3a] md:h-[420px] md:mt-2 lg:absolute lg:top-[50px] lg:left-[550px] lg:h-[650px] lg:w-[870px]">
+        <div class="result h-[320px] bg-white md:h-[370px] lg:h-[550px]"></div>
+        <div class="btn-wrap flex justify-evenly mt-4 md:mt-2 px-8 py-2">
+          <button class="w-40 h-16 mr-80 bg-gray-200 rounded font-raleway font-semibold text-[30px]">Generate</button>
+          <button class="w-40 h-16  bg-gray-200 rounded font-raleway font-semibold text-[30px]">Save</button>
+        </div >
+        <div class="absolute top-[575px] left-[350px]">
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-white dark:text-gray-300">Multiple Choice</label>
+        </div>
+        <div class="flex items-center">
+          <input id="c-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="c-checkbox" class="ms-2 text-sm font-medium text-white dark:text-gray-300">True or False</label>
+        </div>
+        <div class="flex items-center">
+          <input id="c-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="c-checkbox" class="ms-2 text-sm font-medium text-white dark:text-gray-300">Identification</label>
+      </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
